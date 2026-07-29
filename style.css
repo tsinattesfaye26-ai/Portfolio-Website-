@@ -1,1 +1,101 @@
+/* =========================================
+   GLOBAL
+========================================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #120906;
+    color: #f5eee7;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   BACKGROUND DATA NETWORK
+========================================= */
+
+.data-background {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0.35;
+}
+
+
+.data-node {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #d87532;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #d87532;
+    animation: floatingNode 6s ease-in-out infinite;
+}
+
+
+.node-1 {
+    top: 15%;
+    left: 10%;
+}
+
+
+.node-2 {
+    top: 25%;
+    left: 35%;
+    animation-delay: 1s;
+}
+
+
+.node-3 {
+    top: 40%;
+    right: 20%;
+    animation-delay: 2s;
+}
+
+
+.node-4 {
+    top: 65%;
+    left: 20%;
+    animation-delay: 3s;
+}
+
+
+.node-5 {
+    top: 75%;
+    right: 35%;
+    animation-delay: 1.5s;
+}
+
+
+.node-6 {
+    bottom: 10%;
+    right: 10%;
+    animation-delay: 4s;
+}
