@@ -721,3 +721,117 @@ secondary-button {
     top: 30%;
     left: 25%;
 }
+.point-2 {
+    top: 45%;
+    right: 20%;
+    animation-delay: 1s;
+}
+
+
+.point-3 {
+    bottom: 25%;
+    right: 35%;
+    animation-delay: 2s;
+}
+
+
+@keyframes floatPoint {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 6%;
+    border: 1px solid #43291d;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(20, 9, 5, 0.5);
+}
+
+
+.service-card {
+    padding: 40px 30px;
+    border-right: 1px solid #43291d;
+    transition: 0.3s;
+}
+
+
+.service-card:last-child {
+    border-right: none;
+}
+
+
+.service-card:hover {
+    background: rgba(50, 24, 12, 0.5);
+    transform: translateY(-3px);
+}
+
+
+.service-icon {
+    font-size: 30px;
+    color: #d87532;
+    margin-bottom: 20px;
+}
+
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+
+.service-card p {
+    color: #9e8e84;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+section {
+    padding: 120px 7%;
+}
+
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+
+.section-heading.centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(35px, 5vw, 60px);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+
+.section-heading p:last-child {
+    color: #9e8e84;
+    margin-top: 20px;
+}
+
