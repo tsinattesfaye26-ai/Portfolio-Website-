@@ -1011,4 +1011,113 @@ section {
     color: #9d8e84;
 }
 
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.skill-card {
+    border: 1px solid #4a2d20;
+    padding: 35px;
+    border-radius: 15px;
+    background: #180b07;
+    transition: 0.3s;
+}
+
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #d87532;
+}
+
+
+.skill-card span {
+    font-size: 30px;
+}
+
+
+.skill-card h3 {
+    margin: 20px 0 5px;
+}
+
+
+.skill-card p {
+    color: #998b82;
+    font-size: 14px;
+}
+
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+    background: #160a06;
+}
+
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 16px;
+    background: #1c0d08;
+    border: 1px solid #4a2d20;
+    color: white;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+input:focus,
+textarea:focus {
+    border-color: #d87532;
+}
+
+
+.contact-info {
+    border: 1px solid #4a2d20;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+
+.contact-info h3 {
+    margin-bottom: 25px;
+}
+
+
+.contact-info p {
+    margin: 20px 0;
+    color: #a99a90;
+}
+
+
+.contact-info a {
+    color: #d87532;
+}
+
+
 
