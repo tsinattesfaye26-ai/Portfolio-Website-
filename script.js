@@ -214,6 +214,169 @@ function updateFeaturedProject() {
 
 }
 
+/* =========================================
+   OPEN PROJECT DETAILS
+========================================= */
+
+
+viewFeaturedProject.addEventListener(
+    "click",
+    () => {
+
+
+        openProjectDetails(
+            projects[currentProjectIndex]
+        );
+
+
+    }
+);
+
+
+
+
+
+/* =========================================
+   START SYSTEM
+========================================= */
+
+
+createProjectGallery();
+
+
+updateFeaturedProject();
+
+/* =========================================
+   NEXT PROJECT
+========================================= */
+
+nextProject.addEventListener(
+    "click",
+    () => {
+
+
+        currentProjectIndex =
+
+            (
+                currentProjectIndex
+                +
+                1
+            )
+
+            %
+
+            projects.length;
+
+
+        updateFeaturedProject();
+
+    }
+);
+
+
+
+/* =========================================
+   PREVIOUS PROJECT
+========================================= */
+
+previousProject.addEventListener(
+    "click",
+    () => {
+
+
+        currentProjectIndex =
+
+            (
+                currentProjectIndex
+                -
+                1
+                +
+                projects.length
+            )
+
+            %
+
+            projects.length;
+
+
+        updateFeaturedProject();
+
+    }
+);
+
+
+
+/* =========================================
+   OPEN PROJECT DETAILS
+========================================= */
+
+const projectModal =
+    document.getElementById(
+        "projectModal"
+    );
+
+
+const projectDetails =
+    document.getElementById(
+        "projectDetails"
+    );
+
+
+const closeModal =
+    document.getElementById(
+        "closeModal"
+    );
+
+
+
+function openProjectDetails(
+    project
+) {
+
+
+    const githubButton =
+
+        project.githubUrl
+
+            ? `
+
+                <a
+                    href="${project.githubUrl}"
+                    target="_blank"
+                    class="primary-button"
+                >
+
+                    View GitHub →
+
+                </a>
+
+            `
+
+            : "";
+
+
+
+    const liveButton =
+
+        project.liveDemoUrl
+
+            ? `
+
+                <a
+                    href="${project.liveDemoUrl}"
+                    target="_blank"
+                    class="secondary-button"
+                >
+
+                    Live Demo →
+
+                </a>
+
+            `
+
+            : "";
+
+
 
 
 
