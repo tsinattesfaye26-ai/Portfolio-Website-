@@ -107,6 +107,113 @@ function createProjectGallery() {
             </div>
 
         `;
+         card.addEventListener(
+            "click",
+            () => {
+
+
+                currentProjectIndex =
+                    index;
+
+
+                updateFeaturedProject();
+
+
+            }
+        );
+
+
+
+        projectGallery.appendChild(card);
+
+
+    });
+
+
+}
+
+
+
+
+/* =========================================
+   UPDATE FEATURED PROJECT
+========================================= */
+
+
+function updateFeaturedProject() {
+
+
+    const project =
+        projects[currentProjectIndex];
+
+
+
+    if(!project) return;
+
+
+
+    featuredCategory.textContent =
+        project.category;
+
+
+
+    featuredTitle.textContent =
+        project.title;
+
+
+
+    featuredDescription.textContent =
+        project.shortDescription;
+
+
+
+    featuredTools.innerHTML =
+
+        project.tools
+
+        .map(
+            tool =>
+            `<span>${tool}</span>`
+        )
+
+        .join("");
+
+
+
+
+    if(project.image){
+
+
+        featuredProjectImage.innerHTML = `
+
+            <img
+                src="${project.image}"
+                alt="${project.title}"
+            >
+
+        `;
+
+
+    }
+
+    else {
+
+
+        featuredProjectImage.innerHTML = `
+
+            <span>
+                📊
+            </span>
+
+        `;
+
+
+    }
+
+
+
+}
+
 
 
 
