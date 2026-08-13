@@ -154,4 +154,44 @@ function displayProjects(filter = "All") {
 
 }
 
+/* =========================================
+   FILTER PROJECTS
+========================================= */
+
+const filterButtons =
+    document.querySelectorAll(
+        ".filter-button"
+    );
+
+
+filterButtons.forEach(button => {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            filterButtons.forEach(
+                btn =>
+                    btn.classList.remove(
+                        "active"
+                    )
+            );
+
+
+            this.classList.add("active");
+
+
+            const filter =
+                this.dataset.filter;
+
+
+            displayProjects(filter);
+
+        }
+    );
+
+});
+
+
+
 
