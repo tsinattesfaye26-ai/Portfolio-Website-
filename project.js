@@ -193,5 +193,83 @@ filterButtons.forEach(button => {
 });
 
 
+/* =========================================
+   START PROJECT SYSTEM
+========================================= */
+
+displayProjects();
+/* =========================================
+   PORTFOLIO PROJECT SYSTEM
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const projectsGrid =
+        document.getElementById("projectsGrid");
+
+    const filterButtons =
+        document.querySelectorAll(".filter-button");
+
+
+    /* =========================================
+       CREATE PROJECT CARD
+    ========================================== */
+
+    function createProjectCard(project) {
+
+        const card =
+            document.createElement("article");
+
+        card.className =
+            "project-card";
+
+
+        let imageContent = "";
+
+        if (project.image) {
+
+            imageContent = `
+                <img
+                    src="${project.image}"
+                    alt="${project.title}"
+                >
+            `;
+
+        } else {
+
+            imageContent = `
+                <span class="project-placeholder">
+                    ${project.icon}
+                </span>
+            `;
+
+        }
+
+
+        const tools =
+            project.tools
+                .map(function (tool) {
+
+                    return `
+                        <span class="project-tool">
+                            ${tool}
+                        </span>
+                    `;
+
+                })
+                .join("");
+
+
+        card.innerHTML = `
+
+            <!-- PROJECT IMAGE -->
+
+            <div class="project-card-image">
+
+                ${imageContent}
+
+            </div>
+
+
 
 
