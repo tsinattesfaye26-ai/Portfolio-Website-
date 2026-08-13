@@ -103,5 +103,55 @@ function createProjectCard(project) {
                 }
 
             </div>
+            
+            <a
+                href="project-details.html?id=${project.id}"
+                class="view-project-button"
+            >
+                View Full Project →
+            </a>
+
+        </div>
+
+    `;
+
+
+    return card;
+}
+
+
+/* =========================================
+   DISPLAY PROJECTS
+========================================= */
+
+function displayProjects(filter = "All") {
+
+    if (!projectsGrid) {
+        return;
+    }
+
+
+    projectsGrid.innerHTML = "";
+
+
+    projects.forEach(project => {
+
+        if (
+            filter !== "All" &&
+            project.category !== filter
+        ) {
+            return;
+        }
+
+
+        const card =
+            createProjectCard(project);
+
+
+        projectsGrid.appendChild(card);
+
+    });
+
+}
 
 
