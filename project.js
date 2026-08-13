@@ -322,5 +322,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+    /* =========================================
+       DISPLAY PROJECTS
+    ========================================== */
+
+    function displayProjects(category) {
+
+        if (!projectsGrid) {
+            return;
+        }
+
+
+        projectsGrid.innerHTML = "";
+
+
+        const filteredProjects =
+            category === "All"
+
+                ? projects
+
+                : projects.filter(function (project) {
+
+                    return project.category === category;
+
+                });
+
+
+        filteredProjects.forEach(function (project) {
+
+            const card =
+                createProjectCard(project);
+
+            projectsGrid.appendChild(card);
+
+        });
+
+    }
+
 
 
