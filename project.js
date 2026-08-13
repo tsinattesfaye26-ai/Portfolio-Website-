@@ -360,4 +360,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+    /* =========================================
+       FILTER PROJECTS
+    ========================================== */
+
+    filterButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            filterButtons.forEach(function (btn) {
+
+                btn.classList.remove("active");
+
+            });
+
+
+            button.classList.add("active");
+
+
+            const category =
+                button.dataset.filter;
+
+
+            displayProjects(category);
+
+        });
+
+    });
+
+
+    /* =========================================
+       INITIAL LOAD
+    ========================================== */
+
+    displayProjects("All");
+
+});
 
