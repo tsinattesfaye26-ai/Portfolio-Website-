@@ -269,6 +269,57 @@ document.addEventListener("DOMContentLoaded", function () {
                 ${imageContent}
 
             </div>
+ <!-- PROJECT INFORMATION -->
+
+            <div class="project-card-content">
+
+                <span class="project-number">
+                    PROJECT ${String(project.id).padStart(2, "0")}
+                </span>
+
+
+                <div>
+
+                    <span class="project-category">
+                        ${project.category}
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    ${project.title}
+                </h3>
+
+
+                <p class="project-card-description">
+                    ${project.shortDescription}
+                </p>
+
+
+                <div class="project-tools">
+
+                    ${tools}
+
+                </div>
+
+
+                <a
+                    href="project-details.html?id=${project.id}"
+                    class="project-card-button"
+                >
+                    View Full Project
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        `;
+
+
+        return card;
+
+    }
 
 
 
