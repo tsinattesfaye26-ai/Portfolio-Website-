@@ -45,4 +45,63 @@ function createProjectCard(project) {
                         class="chart-bar"
                         style="height:70%"
                     ></span>
+                    <span
+                        class="chart-bar"
+                        style="height:55%"
+                    ></span>
+
+                    <span
+                        class="chart-bar"
+                        style="height:85%"
+                    ></span>
+
+                    <span
+                        class="chart-bar"
+                        style="height:65%"
+                    ></span>
+
+                    <span
+                        class="chart-bar"
+                        style="height:95%"
+                    ></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT INFORMATION -->
+
+        <div class="project-content">
+
+            <span class="project-category">
+                ${project.category}
+            </span>
+
+
+            <h3 class="project-title">
+                ${project.title}
+            </h3>
+
+
+            <p class="project-description">
+                ${project.description}
+            </p>
+
+
+            <div class="project-tools">
+
+                ${project.tools
+                    .map(tool => `
+                        <span class="project-tool">
+                            ${tool}
+                        </span>
+                    `)
+                    .join("")
+                }
+
+            </div>
+
 
