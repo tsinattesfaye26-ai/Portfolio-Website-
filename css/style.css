@@ -1227,3 +1227,45 @@ textarea:focus {
     font-size:
         10px;
 }
+
+/* =========================================
+   VIEW PROJECT BUTTON
+========================================= */
+
+.view-project-button {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        7px;
+
+    color:
+        #d87532;
+
+    font-size:
+        12px;
+
+    font-weight:
+        600;
+
+    text-decoration:
+        none;
+
+    transition:
+        gap 0.3s ease,
+        color 0.3s ease;
+}
+
+.view-project-button:hover {
+
+    gap:
+        12px;
+
+    color:
+        #fff;
+}
+
