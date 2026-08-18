@@ -1401,3 +1401,90 @@ textarea:focus {
         #fff;
 }
 
+/* =========================================
+   DETAIL HERO
+========================================= */
+
+.project-detail-hero {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1.1fr;
+
+    gap:
+        45px;
+
+    align-items:
+        center;
+
+    margin-bottom:
+        45px;
+}
+
+.project-detail-info {
+
+    min-width:
+        0;
+}
+
+.project-detail-category {
+
+    display:
+        inline-block;
+
+    padding:
+        6px 12px;
+
+    border:
+        1px solid #69422d;
+
+    border-radius:
+        20px;
+
+    color:
+        #d87532;
+
+    font-size:
+        10px;
+
+    text-transform:
+        uppercase;
+}
+
+.project-detail-info h1 {
+
+    margin:
+        16px 0;
+
+    color:
+        #fff;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(38px, 5vw, 65px);
+
+    line-height:
+        1;
+}
+
+.project-detail-description {
+
+    max-width:
+        620px;
+
+    color:
+        #a99a90;
+
+    font-size:
+        15px;
+
+    line-height:
+        1.8;
+}
+
+
