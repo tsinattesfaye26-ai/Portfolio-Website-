@@ -1190,3 +1190,40 @@ textarea:focus {
 }
 
 
+/* =========================================
+   PROJECT TOOLS
+========================================= */
+
+.project-card-tools {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        6px;
+
+    margin-bottom:
+        18px;
+}
+
+.project-tool {
+
+    padding:
+        5px 9px;
+
+    border:
+        1px solid
+        rgba(105, 66, 45, 0.6);
+
+    border-radius:
+        5px;
+
+    color:
+        #c9bbb2;
+
+    font-size:
+        10px;
+}
