@@ -1355,3 +1355,49 @@ textarea:focus {
     line-height:
         1.7;
 }
+
+/* =========================================
+   PROJECT DETAILS PAGE
+========================================= */
+
+.project-details-page {
+
+    width:
+        min(1200px, 90%);
+
+    margin:
+        0 auto;
+
+    padding:
+        70px 0 100px;
+}
+
+.back-to-projects {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    margin-bottom:
+        35px;
+
+    color:
+        #d87532;
+
+    text-decoration:
+        none;
+
+    font-size:
+        13px;
+}
+
+.back-to-projects:hover {
+    color:
+        #fff;
+}
+
