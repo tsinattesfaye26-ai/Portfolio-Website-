@@ -1269,3 +1269,89 @@ textarea:focus {
         #fff;
 }
 
+
+/* =========================================
+   MORE PROJECTS
+========================================= */
+
+.more-projects {
+
+    max-width:
+        600px;
+
+    margin:
+        70px auto 0;
+
+    text-align:
+        center;
+}
+
+.more-projects-icon {
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    margin:
+        0 auto 18px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border:
+        1px solid #d87532;
+
+    border-radius:
+        50%;
+
+    color:
+        #d87532;
+
+    font-size:
+        20px;
+}
+
+.more-projects h3 {
+
+    margin:
+        0 0 10px;
+
+    color:
+        #fff;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        22px;
+}
+
+.more-projects h3 span {
+
+    color:
+        #d87532;
+}
+
+.more-projects p {
+
+    margin:
+        0;
+
+    color:
+        #8f8178;
+
+    font-size:
+        13px;
+
+    line-height:
+        1.7;
+}
